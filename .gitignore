@@ -1,0 +1,11 @@
+bashrc.d/*_private.bash
+config/nvim/pack/bundle/opt 
+config/nvim/pack/bundle/start/
+config/nvim/pack/minpac/opt/
+config/nvim/pack/minpac/start/
+vim/pack/minpac/
+vim/spell/*.add
+vim/spell/*.spl
+vim/spell/*.sug
+vim/unite/history*
+vim/unite/rec/
