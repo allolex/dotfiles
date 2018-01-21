@@ -1,11 +1,3 @@
-call minpac#add('elixir-lang/vim-elixir')
-call minpac#add('fatih/vim-go')
-call minpac#add('kchmck/vim-coffee-script')
-call minpac#add('posva/vim-vue')
-call minpac#add('tpope/vim-rails')
-call minpac#add('vim-ruby/vim-ruby')
-call minpac#add('slim-template/vim-slim')
-
 au BufRead,BufNewFile {*.vue} set ft=vue
 au BufRead,BufNewFile {Capfile,Gemfile,Rakefile,Thorfile,Vagrantfile,config.ru,.caprc,.irbrc,irb_tempfile*} set ft=ruby
 
