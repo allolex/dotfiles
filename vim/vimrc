@@ -1,69 +1,7 @@
 set nocompatible
 filetype off
 
-" Initialize minpac for plugin management
-set packpath^=~/.vim
-packadd minpac
-command! PackUpdate call minpac#update()
-command! PackClean call minpac#clean()
-
-call minpac#init()
-call minpac#add('k-takata/minpac', {'type': 'opt'})
-
-if has('nvim')
-  call minpac#add('kassio/neoterm')
-  call minpac#add('Shougo/deoplete.nvim')
-  call minpac#add('fishbullet/deoplete-ruby', { 'type': 'opt' })
-endif
-
-"call minpac#add('SirVer/ultisnips', { 'type': 'opt' })
-"call minpac#add('benmills/vimux', { 'type': 'opt' })
-"call minpac#add('cloud8421/vimux-cucumber', { 'type': 'opt' })
-"call minpac#add('davidoc/taskpaper.vim', { 'type': 'opt' })
-"call minpac#add('jgdavey/vim-turbux', { 'type': 'opt' })
-"call minpac#add('mattn/emmet-vim', { 'type': 'opt' })
-"call minpac#add('pgr0ss/vimux-ruby-test', { 'type': 'opt' })
-"call minpac#add('tomasr/molokai', { 'type': 'opt' })
-call minpac#add('AndrewRadev/splitjoin.vim')                            " convert between single-line and multi-line blocks
-call minpac#add('KurtPreston/vim-autoformat-rails', { 'type': 'opt' })
-call minpac#add('aperezdc/vim-template', { 'type': 'opt' })
-call minpac#add('chrisbra/csv.vim')
-call minpac#add('cloud8421/vim-neatstatus')                             " Add a nice status display
-call minpac#add('craigemery/vim-autotag')
-call minpac#add('easymotion/vim-easymotion')                            " Makes it easy to jump around in files
-call minpac#add('elixir-lang/vim-elixir')
-call minpac#add('fatih/vim-go')
-call minpac#add('godlygeek/tabular', { 'type': 'opt' })
-call minpac#add('honza/vim-snippets', { 'type': 'opt' })
-call minpac#add('jeetsukumaran/vim-buffergator')                        " Make buffer navigation more graphical
-call minpac#add('junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }) " Fuzzy file finder
-call minpac#add('junegunn/vim-easy-align', { 'type': 'opt' })
-call minpac#add('kana/vim-textobj-user') " required for nelstrom/vim-textobj-rubyblock
-call minpac#add('kchmck/vim-coffee-script')
-call minpac#add('mattn/gist-vim', { 'type': 'opt' })
-call minpac#add('mhinz/vim-signify') " show source control diffs in a column
-call minpac#add('nelstrom/vim-textobj-rubyblock') " Add the concept of a ruby block to vim
-call minpac#add('ngmy/vim-rubocop', { 'type': 'opt' })
-call minpac#add('posva/vim-vue')
-call minpac#add('rking/ag.vim', { 'type': 'opt' })
-call minpac#add('scrooloose/nerdtree')                                  " Allow file system display and manipulation
-call minpac#add('slim-template/vim-slim')
-call minpac#add('tmhedberg/matchit')                                    " Makes extended % matching for HTML, LaTeX, and many other languages
-call minpac#add('tpope/vim-abolish')
-call minpac#add('tpope/vim-bundler', { 'type': 'opt' })
-call minpac#add('tpope/vim-endwise')
-call minpac#add('tpope/vim-fugitive')
-call minpac#add('tpope/vim-git')
-call minpac#add('tpope/vim-rails')
-call minpac#add('tpope/vim-rake')
-call minpac#add('tpope/vim-rhubarb', { 'type': 'opt' })
-call minpac#add('tpope/vim-sleuth', { 'type': 'opt' })
-call minpac#add('tpope/vim-surround')
-call minpac#add('tpope/vim-unimpaired')
-call minpac#add('vim-ruby/vim-ruby')
-call minpac#add('vim-scripts/LanguageTool', { 'type': 'opt' })          " Check grammar via :LanguageToolCheck
-call minpac#add('vim-scripts/tComment')
-call minpac#add('vim-syntastic/syntastic')                                 " Linter / syntax checker
+source $HOME/.vim/packages.vim
 
 set nobackup
 set nowritebackup

@@ -14,20 +14,17 @@ if executable('rg')
   let g:ctrlp_user_command='rg %s -l -g "" --color never'
 endif
 
-" Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
-" See discussion at: https://github.com/thoughtbot/dotfiles/commit/f854c8d8ef08ab0f80639e0219f9800f0246fb90
-" if executable('ag')
-"   set grepprg=ag\ --nogroup\ --nocolor
-"   let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-" endif
+" ACK configuration
+if executable('rg')
+  set grepformat^=%f:%l:%c:%m
+  let g:ackprg = 'rg\ --vimgrep'
+endif
 
 " NERDTree customization
 let NERDTreeShowHidden=0
 let NERDTreeShowBookmarks=0
 let g:NERDTreeChDirMode=2
 
-
 " junegunn/vim-easy-align
 xmap ga<Plug>(EasyAlign)
 nmap ga<Plug>(EasyAlign)
-
