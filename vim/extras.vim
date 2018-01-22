@@ -62,9 +62,6 @@ autocmd BufWritePost *.pl Xbit
 autocmd BufWritePost *.bash Xbit
 autocmd BufWritePost *.sh Xbit
 
-" Marked.app preview for Markdown syntax
-map <leader>m :silent !open % -a /Applications/Marked.app<cr>:redraw!<cr>
-
 " Completion
 set complete=.,b,u,]
 
