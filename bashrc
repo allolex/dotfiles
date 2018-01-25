@@ -35,7 +35,7 @@ function configure_editor {
   export EDITOR=/usr/local/bin/vim
 }
 
-export HOSTNAME="nashville"
+export HOSTNAME=$(hostname | cut -d\. -f1)
 
 load_homebrew_command_completions
 source_modules
