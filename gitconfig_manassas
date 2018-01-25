@@ -1,0 +1,51 @@
+[core]
+  editor = nvim
+  excludesfile = $HOME/.gitignore_global
+[alias]
+  aliases = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\ \t => \\2/' | sort
+  br = branch
+  ci = commit
+  co = checkout
+  df = diff
+  graph = log --color --graph --pretty=format:\"%h | %ad | %an | %s%d\" --date=short
+  hist = log --color --pretty=format:\"%C(yellow)%h%C(reset) %s%C(bold red)%d%C(reset) %C(green)%ad%C(reset) %C(blue)[%an]%C(reset)\" --relative-date --decorate
+  lg = log -p
+  rb = rebase
+  rbi = rebase -i
+  st = status
+  this = !git init && git add -A && git commit -m'Commit initial directory state'
+  viz = ! $GIT_VISUALISATION_APP .
+  nomerge = log --grep="Merge" --invert-grep --oneline --decorate
+[color]
+  ui = auto
+[merge]
+  tool = gvimdiff
+[mergetool]
+  keepBackup = true
+[push]
+  default = simple
+[github]
+  user = $GITHUB_USER
+[init]
+  templatedir = ~/.git_templates
+[credential]
+  helper = osxkeychain
+[filter "media"]
+  required = true
+  clean = git media clean %f
+  smudge = git media smudge %f
+[pull]
+  rebase = true
+[filter "hawser"]
+  clean = git hawser clean %f
+  smudge = git hawser smudge %f
+  required = true
+[filter "lfs"]
+  clean = git-lfs clean %f
+  smudge = git-lfs smudge %f
+  required = true
+[user]
+  email = damon.davison@avalere.com
+  name = Damon Davison
+[gpg]
+  program = /usr/local/bin/gpg
