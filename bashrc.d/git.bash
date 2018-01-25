@@ -1,7 +1,6 @@
 source /usr/local/etc/bash_completion.d/git-prompt.sh
 
 export GIT_VISUALISATION_APP="/Applications/Tower.app/Contents/MacOS/gittower"
-export GITHUB_USER="allolex"
 
 alias g='git status -sb'
 
@@ -15,9 +14,9 @@ alias gb='git branch'
 alias gcob='git checkout'
 alias gcob='git checkout -b'
 
-alias gc='git commit -S'
-alias gca='git commit -S --amend'
-alias gcv='git commit -S --no-verify'
+alias gc='git cm'
+alias gca='git cm --amend'
+alias gcv='git cm --no-verify'
 
 alias gd='git diff --color-words'
 alias gdc='git diff --cached -w'
@@ -44,4 +43,3 @@ alias gsp='git stash pop'
 alias gss='git stash save'
 
 alias gt='git tag'
-

@@ -1,10 +1,13 @@
+[user]
+  email = damon.davison@avalere.com
+  name = Damon Davison
 [core]
   editor = nvim
-  excludesfile = $HOME/.gitignore_global
+  excludesfile = /Users/damon.davison/.gitignore_global
 [alias]
   aliases = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\ \t => \\2/' | sort
   br = branch
-  ci = commit
+  cm = commit
   co = checkout
   df = diff
   graph = log --color --graph --pretty=format:\"%h | %ad | %an | %s%d\" --date=short
@@ -25,7 +28,7 @@
 [push]
   default = simple
 [github]
-  user = $GITHUB_USER
+  user = damon-davison
 [init]
   templatedir = ~/.git_templates
 [credential]
@@ -44,8 +47,5 @@
   clean = git-lfs clean %f
   smudge = git-lfs smudge %f
   required = true
-[user]
-  email = damon.davison@avalere.com
-  name = Damon Davison
 [gpg]
   program = /usr/local/bin/gpg

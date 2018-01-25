@@ -5,8 +5,8 @@
 [alias]
   aliases = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\ \t => \\2/' | sort
   br = branch
-  ci = commit
   co = checkout
+  cm = commit -S
   df = diff
   graph = log --color --graph --pretty=format:\"%h | %ad | %an | %s%d\" --date=short
   hist = log --color --pretty=format:\"%C(yellow)%h%C(reset) %s%C(bold red)%d%C(reset) %C(green)%ad%C(reset) %C(blue)[%an]%C(reset)\" --relative-date --decorate
@@ -26,7 +26,7 @@
 [push]
   default = simple
 [github]
-  user = $GITHUB_USER
+  user = allolex
 [ghi]
   token = 3e5f04f23cc34e7d712ce2d81199906384b279db
 [init]
