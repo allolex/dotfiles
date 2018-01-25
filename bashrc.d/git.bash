@@ -1,4 +1,8 @@
 source /usr/local/etc/bash_completion.d/git-prompt.sh
+
+export GIT_VISUALISATION_APP="/Applications/Tower.app/Contents/MacOS/gittower"
+export GITHUB_USER="allolex"
+
 alias g='git status -sb'
 
 alias gv='git viz'
