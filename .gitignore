@@ -1,4 +1,5 @@
 bashrc.d/*_private.bash
+config/direnv/allow/
 config/nvim/pack/bundle/opt 
 config/nvim/pack/bundle/start/
 config/nvim/pack/minpac/opt/
