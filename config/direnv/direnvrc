@@ -1,0 +1,8 @@
+# See https://github.com/direnv/direnv/wiki/Python#-pyenv
+# https://gist.github.com/alexhayes/cb1e6ad873c147502132ae17362a9daf
+
+use_python() {
+  local python_root=$HOME/.pyenv/versions/$1
+  load_prefix "$python_root"
+  layout_python "$python_root/bin/python"
+}
