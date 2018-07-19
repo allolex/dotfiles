@@ -4,12 +4,14 @@
 .DS_Store
 .codeclimate.yml
 .csslintrc
+.direnv
 .env
 .env.*
 .envrc
 .eslintignore
 .eslintrc*
 .netrwhist
+.python-version
 .ruby-gemset
 .rvmrc
 .tags
