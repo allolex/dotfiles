@@ -1,5 +1,6 @@
 export EDITOR=nvim
 export VISUAL=nvim
+alias vim=nvim
 
 export VIMDATA="${HOME}/.local/share/nvim"
 export VIMCONFIG="${HOME}/.config/nvim"
