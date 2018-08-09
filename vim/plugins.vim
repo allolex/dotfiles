@@ -1,3 +1,6 @@
+" Enable indent guides by default
+let g:indent_guides_enable_on_vim_startup = 1
+
 "Ctrlp configuration
 let g:ctrlp_working_path_mode = 2
 set wildignore+=*/.hg/*,*/.svn/*,*/vendor/cache/*,*/public/system/*,*/tmp/*,*/log/*,*/.git/*,*/.jhw-cache/*,*/solr/data/*,*/node_modules/*,*/.DS_Store,*/*.beam

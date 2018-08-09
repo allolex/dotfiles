@@ -15,13 +15,14 @@ if has('nvim')
 endif
 
 "call minpac#add('SirVer/ultisnips', { 'type': 'opt' })
+
 call minpac#add('mattn/emmet-vim', { 'type': 'opt' }) " Expand abbreviated code like Emmet, e.g. 'a>href' gets expanded.
 call minpac#add('AndrewRadev/splitjoin.vim') " convert between single-line and multi-line blocks
 call minpac#add('KurtPreston/vim-autoformat-rails', { 'type': 'opt' })
 call minpac#add('aperezdc/vim-template') " Apply a template to new files
 call minpac#add('chrisbra/csv.vim') " CSV support
 call minpac#add('cloud8421/vim-neatstatus') " Add a nice status display
-call minpac#add('craigemery/vim-autotag')
+call minpac#add('craigemery/vim-autotag') " Automate ctags when editing source files
 call minpac#add('easymotion/vim-easymotion') " Makes it easy to jump around in files
 call minpac#add('elixir-lang/vim-elixir', { 'type': 'opt' })
 call minpac#add('fatih/vim-go', { 'type': 'opt' })
@@ -35,6 +36,7 @@ call minpac#add('kchmck/vim-coffee-script', { 'type': 'opt' }) " Coffeescript su
 call minpac#add('mattn/gist-vim', { 'type': 'opt' }) " Support for GitHub gists
 call minpac#add('mhinz/vim-signify') " show git (and other source control) diffs in a column
 call minpac#add('mileszs/ack.vim') " Search recursively inside directories, e.g. `:Ack [options] {pattern} [{directories}]`
+call minpac#add('nathanaelkane/vim-indent-guides') " Fancy indentation guides
 call minpac#add('nelstrom/vim-textobj-rubyblock') " Add the concept of a ruby block to vim
 call minpac#add('ngmy/vim-rubocop', { 'type': 'opt' }) " Rubocop support
 call minpac#add('posva/vim-vue', { 'type': 'opt' }) " Vue.js support
