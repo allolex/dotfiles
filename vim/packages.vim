@@ -30,6 +30,7 @@ call minpac#add('godlygeek/tabular', { 'type': 'opt' })
 call minpac#add('honza/vim-snippets') 
 call minpac#add('jeetsukumaran/vim-buffergator') " List navigation of buffers
 call minpac#add('junegunn/fzf') " Fuzzy file finder
+call minpac#add('junegunn/goyo.vim') " Distraction-free writing mode (text focus mode)
 call minpac#add('junegunn/vim-easy-align')
 call minpac#add('kana/vim-textobj-user') " required for nelstrom/vim-textobj-rubyblock
 call minpac#add('kchmck/vim-coffee-script', { 'type': 'opt' }) " Coffeescript support
