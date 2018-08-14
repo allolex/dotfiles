@@ -1,6 +1,6 @@
 export EDITOR=nvim
 export VISUAL=nvim
-alias vim=nvim
+alias vim="printf '\e]1;%s\a' 'Editor' && nvim"
 
 export VIMDATA="${HOME}/.local/share/nvim"
 export VIMCONFIG="${HOME}/.config/nvim"
