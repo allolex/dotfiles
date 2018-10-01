@@ -77,5 +77,6 @@ source $HOME/.vim/visual_fixes.vim
 source $HOME/.vim/extras.vim
 source $HOME/.vim/markdown.vim
 source $HOME/.vim/dash.vim
+source $HOME/.vim/python.vim
 
 packloadall
