@@ -14,9 +14,15 @@ alias gb='git branch'
 alias gcob='git checkout'
 alias gcob='git checkout -b'
 
-alias gc='git cm'
-alias gca='git cm --amend'
-alias gcv='git cm --no-verify'
+if [[ -z ${GPG_DEFAULT_KEY} ]]; then
+  alias gc='git commit'
+  alias gca='git commit --amend'
+  alias gcv='git commit --no-verify'
+else
+  alias gc='git commit --gpg-sign'
+  alias gca='git commit --gpg-sign --amend'
+  alias gcv='git commit --gpg-sign --no-verify'
+fi
 
 alias gd='git diff --color-words'
 alias gdc='git diff --cached -w'
@@ -33,6 +39,8 @@ alias gl='git log --oneline --decorate'
 alias gp='git pull'
 alias gpp='git pull --rebase && git push'
 alias gpr='git pull --rebase'
+
+alias gprq='git pull-request'
 
 alias grc='git rebase --continue'
 alias gri='git rebase --interactive'
