@@ -30,3 +30,6 @@ let g:vimrubocop_config = '.rubocop.yml'
 
 " JavaScript ES6 support
 autocmd BufRead,BufNewFile *.es6 setfiletype javascript
+
+" Tell vim you're editing SQL when using `\e` in psql
+au BufRead /tmp/psql.edit.* set syntax=sql
