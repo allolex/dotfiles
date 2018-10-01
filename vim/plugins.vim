@@ -29,5 +29,6 @@ let NERDTreeShowBookmarks=0
 let g:NERDTreeChDirMode=2
 
 " junegunn/vim-easy-align
-xmap ga<Plug>(EasyAlign)
-nmap ga<Plug>(EasyAlign)
+" These are buggy
+" xmap ga<Plug>(EasyAlign)
+" nmap ga<Plug>(EasyAlign)
