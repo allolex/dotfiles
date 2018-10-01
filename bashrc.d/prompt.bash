@@ -1,4 +1,3 @@
-
 function __git_dirty {
  git diff --quiet HEAD &>/dev/null 
  [ $? == 1 ] && echo "!"
@@ -6,6 +5,12 @@ function __git_dirty {
 
 function __git_branch {
  __git_ps1 " %s"
+}
+
+function __env_language {
+  # elixir --version 2>&1
+  python --version 2>&1
+  # ruby -v | sed 's/(.*$//'
 }
 
 bash_prompt() {
@@ -44,8 +49,7 @@ bash_prompt() {
   local UC=$W                 # user's color
   [ $UID -eq "0" ] && UC=$R   # root's color
 
-  PS1="$C\$(ruby -v | sed s/\(.*//)${Y}$(hostname)$W:$EMY\w$EMW\$(__git_branch)$EMY\$(__git_dirty)${NONE}
-$ "
+  PS1="$EMC$(hostname | sed 's/\.local$//')$W:$EMB\$(__env_language)$W:$EMY\w$EMW\$(__git_branch)$EMY\$(__git_dirty)${NONE} $ "
 }
 
 bash_prompt
