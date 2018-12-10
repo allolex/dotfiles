@@ -16,11 +16,10 @@ function source_modules {
   unset f
 }
 
+export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/opt/bin:/usr/local/opt/sbin:$PATH
 
 export HOSTNAME=$(hostname | cut -d\. -f1)
 
-source_modules
-
-export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/opt/bin:/usr/local/opt/sbin:$PATH
-
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+source_modules
