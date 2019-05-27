@@ -5,7 +5,6 @@ config/nvim/pack/bundle/start/
 config/nvim/pack/minpac/opt/
 config/nvim/pack/minpac/start/
 vim/.netrwhist
-vim/pack/minpac/
 vim/spell/*.add
 vim/spell/*.spl
 vim/spell/*.sug
