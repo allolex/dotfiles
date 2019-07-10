@@ -1,10 +1,11 @@
 function __git_dirty {
  git diff --quiet HEAD &>/dev/null 
- [ $? == 1 ] && echo "!"
+ [ $? == 1 ] && echo "!!!"
 }
 
 function __git_branch {
- __git_ps1 " %s"
+#  __git_ps1 " %s"
+  git branch --show-current
 }
 
 function __env_language {
@@ -49,7 +50,7 @@ bash_prompt() {
   local UC=$W                 # user's color
   [ $UID -eq "0" ] && UC=$R   # root's color
 
-  PS1="$EMC$(hostname | sed 's/\.local$//')$W:$EMB\$(__env_language)$W:$EMY\w$EMW\$(__git_branch)$EMY\$(__git_dirty)${NONE} $ "
+  PS1="$EMC$(hostname | sed 's/\.local$//')$W : $EMB\$(__env_language)$W\n$EMY\w : $EMW\$(__git_branch) $EMY\$(__git_dirty)${NONE} $ "
 }
 
 bash_prompt
