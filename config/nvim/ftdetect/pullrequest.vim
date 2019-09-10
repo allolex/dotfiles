@@ -1,0 +1,1 @@
+/usr/local/share/vim/vimfiles/ftdetect/pullrequest.vim
