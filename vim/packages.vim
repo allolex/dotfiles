@@ -19,6 +19,7 @@ endif
 "call minpac#add('SirVer/ultisnips', { 'type': 'opt' })
 
 if exists('*minpac#init')
+  call minpac#add('ambv/black') " Python Black syntax enforcement
   call minpac#add('mattn/emmet-vim', { 'type': 'opt' }) " Expand abbreviated code like Emmet, e.g. 'a>href' gets expanded.
   call minpac#add('AndrewRadev/splitjoin.vim') " convert between single-line and multi-line blocks
   call minpac#add('KurtPreston/vim-autoformat-rails', { 'type': 'opt' })
