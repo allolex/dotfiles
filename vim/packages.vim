@@ -13,12 +13,15 @@ call minpac#add('k-takata/minpac', {'type': 'opt'})
 if has('nvim')
   call minpac#add('kassio/neoterm')
   call minpac#add('Shougo/deoplete.nvim')
+  call minpac#add('Shougo/denite.nvim')
   call minpac#add('fishbullet/deoplete-ruby', { 'type': 'opt' })
 endif
 
 "call minpac#add('SirVer/ultisnips', { 'type': 'opt' })
 
 if exists('*minpac#init')
+  call minpac#add('vim-airline/vim-airline') " Fancy status line
+  call minpac#add('vim-airline/vim-airline-themes')
   call minpac#add('ambv/black') " Python Black syntax enforcement
   call minpac#add('mattn/emmet-vim', { 'type': 'opt' }) " Expand abbreviated code like Emmet, e.g. 'a>href' gets expanded.
   call minpac#add('AndrewRadev/splitjoin.vim') " convert between single-line and multi-line blocks
@@ -26,7 +29,7 @@ if exists('*minpac#init')
   call minpac#add('aperezdc/vim-template') " Apply a template to new files
   call minpac#add('chrisbra/csv.vim') " CSV support
   call minpac#add('christoomey/vim-sort-motion') " Awesome sorting support
-  call minpac#add('cloud8421/vim-neatstatus') " Add a nice status display
+  " call minpac#add('cloud8421/vim-neatstatus') " Add a nice status display
   call minpac#add('craigemery/vim-autotag') " Automate ctags when editing source files
   call minpac#add('easymotion/vim-easymotion') " Makes it easy to jump around in files
   call minpac#add('elixir-lang/vim-elixir', { 'type': 'opt' })

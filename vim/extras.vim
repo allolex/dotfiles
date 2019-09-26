@@ -108,7 +108,10 @@ nmap <leader>b :BuffergatorToggle<cr>
 " fugitive
 nmap <leader>gb :gBlame<cr>
 
-" Convert {} to do…end. 
+" airline
+let g:airline_powerline_fonts = 1
+
+" Convert {} to do…end.
 " Use `cSB-` or `cS{-` when you're in a block. The reverse
 " does not work.
 " https://github.com/tpope/vim-surround/issues/193
