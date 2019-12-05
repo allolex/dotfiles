@@ -42,6 +42,8 @@ alias gpr='git pull --rebase'
 
 alias gprq='git pull-request'
 
+alias gpush="git push -u origin \"\$(git rev-parse --abbrev-ref HEAD)\""
+
 alias grc='git rebase --continue'
 alias gri='git rebase --interactive'
 alias grs='git rebase --skip'
