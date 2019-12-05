@@ -20,7 +20,7 @@ endif
 " ACK configuration
 if executable('rg')
   set grepformat^=%f:%l:%c:%m
-  let g:ackprg = 'rg\ --vimgrep'
+  let g:ackprg = 'rg --vimgrep'
 endif
 
 " NERDTree customization
