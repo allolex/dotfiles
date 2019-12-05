@@ -29,7 +29,6 @@ if exists('*minpac#init')
   call minpac#add('aperezdc/vim-template') " Apply a template to new files
   call minpac#add('chrisbra/csv.vim') " CSV support
   call minpac#add('christoomey/vim-sort-motion') " Awesome sorting support
-  " call minpac#add('cloud8421/vim-neatstatus') " Add a nice status display
   call minpac#add('craigemery/vim-autotag') " Automate ctags when editing source files
   call minpac#add('easymotion/vim-easymotion') " Makes it easy to jump around in files
   call minpac#add('elixir-lang/vim-elixir', { 'type': 'opt' })
