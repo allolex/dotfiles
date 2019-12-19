@@ -1,3 +1,5 @@
+let g:syntastic_aggregate_errors = 1
+
 au BufRead,BufNewFile {*.vue} set ft=vue
 au BufRead,BufNewFile {Capfile,Gemfile,Rakefile,Thorfile,Vagrantfile,config.ru,.caprc,.irbrc,irb_tempfile*} set ft=ruby
 
