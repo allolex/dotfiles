@@ -24,7 +24,7 @@ if executable('rg')
 endif
 
 " NERDTree customization
-let NERDTreeShowHidden=0
+let NERDTreeShowHidden=1
 let NERDTreeShowBookmarks=0
 let g:NERDTreeChDirMode=2
 
