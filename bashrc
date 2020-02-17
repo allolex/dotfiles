@@ -20,6 +20,10 @@ export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/opt/bin:/usr/local/opt/sbi
 
 export HOSTNAME=$(hostname | cut -d\. -f1)
 
+source_modules
+
+export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/opt/bin:/usr/local/opt/sbin:$PATH
+
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
-source_modules
+source $(brew --prefix asdf)/asdf.sh

@@ -65,6 +65,7 @@ set complete+=kspell
 let Tlist_Ctags_Cmd = "/usr/bin/env ctags -R --exclude=.git --exclude=log -f ./.tags *"
 set tags+=.tags
 
+source $HOME/.vim/coc.vim
 source $HOME/.vim/autocommands.vim
 source $HOME/.vim/plugins.vim
 source $HOME/.vim/shortcuts.vim
