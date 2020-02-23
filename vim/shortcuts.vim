@@ -65,12 +65,6 @@ nmap <leader>l ysiw]f]a()<Left>
 " Emmet
 let g:user_emmet_expandabbr_key = '<c-e>'
 
-"Remap NerdTree
-nmap <silent> <leader>3 :NERDTreeToggle<cr>
-
-"Remap CtrlP
-nmap <silent> <leader>1 :CtrlP<cr>
-
 "SplitJoin
 let g:splitjoin_split_mapping = ''
 let g:splitjoin_join_mapping = ''
