@@ -32,3 +32,6 @@ let g:NERDTreeChDirMode=2
 " These are buggy
 " xmap ga<Plug>(EasyAlign)
 " nmap ga<Plug>(EasyAlign)
+
+" vim-templates
+let g:templates_directory = ['~/.vim/templates']
