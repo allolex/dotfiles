@@ -9,11 +9,14 @@ else
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
 
-Plug 'fishbullet/deoplete-ruby'
+Plug 'Shougo/denite.nvim'
 
 let g:deoplete#enable_at_startup = 1
 
 """ LANGUAGE
+
+" General-purpose formatters
+Plug 'sbdchd/neoformat'
 
 " Coffeescript support
 Plug 'kchmck/vim-coffee-script', { 'for': 'coffeescript' }
@@ -22,8 +25,9 @@ Plug 'kchmck/vim-coffee-script', { 'for': 'coffeescript' }
 Plug 'chrisbra/csv.vim', { 'for': 'csv' }
 
 " Elixir
+Plug 'mmorearty/elixir-ctags', { 'for': 'elixir' }
 Plug 'elixir-lang/vim-elixir', { 'for': 'elixir' }
-
+" Plug 'slashmili/alchemist', { 'for': 'elixir' }
 
 " Go
 Plug 'fatih/vim-go', { 'for': 'go' }
@@ -33,6 +37,9 @@ Plug 'deoplete-plugins/deoplete-go', { 'do': 'make'}
 Plug 'tpope/vim-markdown', { 'for': 'markdown' }
 Plug 'jtratner/vim-flavored-markdown', { 'for': 'markdown' }
 
+" Python
+Plug 'deoplete-plugins/deoplete-jedi'
+
 " Ruby
 Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
 Plug 'tpope/vim-bundler', { 'for': 'ruby' }
@@ -40,9 +47,18 @@ Plug 'tpope/vim-rails', { 'for': 'ruby' }
 Plug 'tpope/vim-rake'
 Plug 'KurtPreston/vim-autoformat-rails', { 'for': 'ruby' }
 Plug 'ngmy/vim-rubocop', { 'for': 'ruby' }
+" Plug 'fishbullet/deoplete-ruby', { 'for': 'ruby' }
+Plug 'takkii/Bignyanco', { 'for': 'ruby' }
+
+" Rust
+Plug 'racer-rust/vim-racer'
 
 " slim
 Plug 'slim-template/vim-slim', { 'for': 'slim' }
+
+" Typescript
+Plug 'HerringtonDarkholme/yats.vim'
+Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
 
 " Vue.js support
 Plug 'posva/vim-vue'
@@ -73,7 +89,7 @@ Plug 'easymotion/vim-easymotion'
 
 """ ALIGNMENT / TABLE FORMATTING
 
-" Manipulate tabular formatting in text/code 
+" Manipulate tabular formatting in text/code
 Plug 'godlygeek/tabular'
 
 " Easy alignment

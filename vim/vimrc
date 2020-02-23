@@ -62,7 +62,7 @@ set complete=.,w,b,u,t
 " When spellcheck is enabled, autocomplete from dictionary
 set complete+=kspell
 
-" Tags
+" Exhuberant Ctags
 let Tlist_Ctags_Cmd = "/usr/bin/env ctags -R --exclude=.git --exclude=log -f ./.tags *"
 set tags+=.tags
 
