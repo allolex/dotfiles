@@ -126,3 +126,6 @@ nnoremap <silent> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
+
+""" This has to be last to ensure compatibility with vim-endwise
+source $HOME/.vim/vim-endwise-coc-nvim-compatibility.vim

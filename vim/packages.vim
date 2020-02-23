@@ -39,7 +39,6 @@ Plug 'tpope/vim-rails', { 'for': 'ruby' }
 Plug 'tpope/vim-rake'
 Plug 'KurtPreston/vim-autoformat-rails', { 'for': 'ruby' }
 Plug 'ngmy/vim-rubocop', { 'for': 'ruby' }
-Plug 'tpope/vim-endwise', { 'for': 'ruby' } " Add the end to certain structures automatically, e.g. in Ruby, type 'do', get 'end'
 
 " slim
 Plug 'slim-template/vim-slim', { 'for': 'slim' }
@@ -151,5 +150,8 @@ Plug 'vim-scripts/tComment'
 
 " Linter / syntax checker
 Plug 'vim-syntastic/syntastic'
+
+" Block end completion for Ruby, elixir and others
+Plug 'tpope/vim-endwise'
 
 call plug#end()
