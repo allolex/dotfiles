@@ -8,10 +8,20 @@ function __git_branch {
   git branch --show-current
 }
 
+function join_by { 
+  local d=$1
+  shift
+  echo -n "$1"
+  shift
+  printf "%s" "${@/#/$d}"
+}
+
 function __env_language {
-  # elixir --version 2>&1
-  python --version 2>&1
-  # ruby -v | sed 's/(.*$//'
+  EL_VER="elixir_$(elixir --version | tail -1 | perl -pe's/Elixir (\d+\.\d+\.\d+[\S]*).*$/$1/')"
+  PY_VER="python_$(python --version 2>&1 | perl -pe's/Python (\d+\.\d+\.\d+[\S]*).*$/$1/')"
+  RU_VER="ruby_$(ruby -v | sed 's/(.*$//' | perl -pe's/ruby (\d+\.\d+\.\d+[\S]*).*$/$1/')"
+
+  echo $(join_by " | " $EL_VER $PY_VER $RU_VER)
 }
 
 bash_prompt() {
