@@ -27,6 +27,7 @@ Plug 'elixir-lang/vim-elixir', { 'for': 'elixir' }
 
 " Go
 Plug 'fatih/vim-go', { 'for': 'go' }
+Plug 'deoplete-plugins/deoplete-go', { 'do': 'make'}
 
 " Markdown
 Plug 'tpope/vim-markdown', { 'for': 'markdown' }

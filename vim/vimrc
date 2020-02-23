@@ -42,7 +42,8 @@ set shiftwidth=2
 set expandtab
 
 " Display extra whitespace
-set list listchars=tab:»·,trail:·
+set list listchars=tab:  ,trail:·
+" set list listchars=tab:»·,trail:·
 " Clipboard fix for OsX
 set clipboard=unnamed
 
@@ -79,5 +80,6 @@ source $HOME/.vim/extras.vim
 source $HOME/.vim/markdown.vim
 source $HOME/.vim/dash.vim
 source $HOME/.vim/python.vim
+source $HOME/.vim/go.vim
 
 packloadall
