@@ -3,6 +3,9 @@ call plug#begin('~/.vim/plugged')
 if has('nvim')
   Plug 'kassio/neoterm'
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+
+  Plug 'neoclide/coc.nvim', { 'branch': 'release'}
+  " Plug 'hyhugh/coc-erlang_ls', { 'do': 'yarn install --frozen-lockfile' }
 else
   Plug 'Shougo/deoplete.nvim'
   Plug 'roxma/nvim-yarp'
@@ -27,6 +30,7 @@ Plug 'chrisbra/csv.vim', { 'for': 'csv' }
 " Elixir
 Plug 'mmorearty/elixir-ctags', { 'for': 'elixir' }
 Plug 'elixir-lang/vim-elixir', { 'for': 'elixir' }
+
 " Plug 'slashmili/alchemist', { 'for': 'elixir' }
 
 " Go
@@ -39,6 +43,7 @@ Plug 'jtratner/vim-flavored-markdown', { 'for': 'markdown' }
 
 " Python
 Plug 'deoplete-plugins/deoplete-jedi'
+Plug 'python-mode/python-mode'
 
 " Ruby
 Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
@@ -82,7 +87,7 @@ Plug 'aperezdc/vim-template'
 Plug 'cloud8421/vim-neatstatus'
 
 " Automate ctags when editing source files
-Plug 'craigemery/vim-autotag'
+" Plug 'craigemery/vim-autotag', { 'commit': '001aa5de7b844779bee67764d662cbd6935b546e' }
 
 " Makes it easy to jump around in files
 Plug 'easymotion/vim-easymotion'
@@ -123,8 +128,6 @@ Plug 'mhinz/vim-signify'
 
 " Search recursively inside directories, e.g. `:Ack [options] {pattern} [{directories}]`
 Plug 'mileszs/ack.vim'
-
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Allow file system display and manipulation
 Plug 'scrooloose/nerdtree'
