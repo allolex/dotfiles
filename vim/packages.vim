@@ -6,6 +6,7 @@ if has('nvim')
 
   Plug 'neoclide/coc.nvim', { 'branch': 'release'}
   " Plug 'hyhugh/coc-erlang_ls', { 'do': 'yarn install --frozen-lockfile' }
+  " Plug 'dense-analysis/ale'
 else
   Plug 'Shougo/deoplete.nvim'
   Plug 'roxma/nvim-yarp'
