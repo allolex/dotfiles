@@ -1,3 +1,5 @@
+let g:coc_global_extensions = ['coc_conjure', 'coc_solargraph']
+
 " if hidden is not set, TextEdit might fail.
 set hidden
 

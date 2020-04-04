@@ -1,26 +1,22 @@
 call plug#begin('~/.vim/plugged')
 
 if has('nvim')
+  Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' }
   Plug 'kassio/neoterm'
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-
   Plug 'neoclide/coc.nvim', { 'branch': 'release'}
-  " Plug 'hyhugh/coc-erlang_ls', { 'do': 'yarn install --frozen-lockfile' }
-  " Plug 'dense-analysis/ale'
 else
-  Plug 'Shougo/deoplete.nvim'
+  Plug 'Shougo/denite.nvim'
   Plug 'roxma/nvim-yarp'
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
-
-Plug 'Shougo/denite.nvim'
-
-let g:deoplete#enable_at_startup = 1
 
 """ LANGUAGE
 
 " General-purpose formatters
 Plug 'sbdchd/neoformat'
+
+" Clojure
+Plug 'Olical/conjure', { 'tag': 'v2.1.2', 'do': 'bin/compile', 'for': 'clojure' }
 
 " Coffeescript support
 Plug 'kchmck/vim-coffee-script', { 'for': 'coffeescript' }
@@ -32,19 +28,15 @@ Plug 'chrisbra/csv.vim', { 'for': 'csv' }
 Plug 'mmorearty/elixir-ctags', { 'for': 'elixir' }
 Plug 'elixir-lang/vim-elixir', { 'for': 'elixir' }
 
-" Plug 'slashmili/alchemist', { 'for': 'elixir' }
-
 " Go
 Plug 'fatih/vim-go', { 'for': 'go' }
-Plug 'deoplete-plugins/deoplete-go', { 'do': 'make'}
 
 " Markdown
 Plug 'tpope/vim-markdown', { 'for': 'markdown' }
 Plug 'jtratner/vim-flavored-markdown', { 'for': 'markdown' }
 
 " Python
-Plug 'deoplete-plugins/deoplete-jedi'
-Plug 'python-mode/python-mode'
+Plug 'python-mode/python-mode', { 'for': 'python' }
 
 " Ruby
 Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
@@ -53,7 +45,6 @@ Plug 'tpope/vim-rails', { 'for': 'ruby' }
 Plug 'tpope/vim-rake'
 Plug 'KurtPreston/vim-autoformat-rails', { 'for': 'ruby' }
 Plug 'ngmy/vim-rubocop', { 'for': 'ruby' }
-" Plug 'fishbullet/deoplete-ruby', { 'for': 'ruby' }
 Plug 'takkii/Bignyanco', { 'for': 'ruby' }
 Plug 'ruby-formatter/rufo-vim', { 'for': 'ruby' }
 
@@ -157,6 +148,7 @@ Plug 'tpope/vim-sleuth'
 
 " Support for surrounding things, like braces or do…end
 Plug 'tpope/vim-surround'
+Plug 'jiangmiao/auto-pairs'
 
 " Use [ and ] to access complementary pairs of mappings
 Plug 'tpope/vim-unimpaired'
