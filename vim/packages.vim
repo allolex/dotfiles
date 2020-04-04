@@ -55,6 +55,7 @@ Plug 'KurtPreston/vim-autoformat-rails', { 'for': 'ruby' }
 Plug 'ngmy/vim-rubocop', { 'for': 'ruby' }
 " Plug 'fishbullet/deoplete-ruby', { 'for': 'ruby' }
 Plug 'takkii/Bignyanco', { 'for': 'ruby' }
+Plug 'ruby-formatter/rufo-vim', { 'for': 'ruby' }
 
 " Rust
 Plug 'racer-rust/vim-racer'
