@@ -30,6 +30,9 @@ autocmd BufRead,BufNewFile {*.md,*.mkd} setlocal spell
 " Rubocop. Ruby style checker.
 let g:vimrubocop_config = '.rubocop.yml'
 
+" Rufo. Opinionated code formatter for Ruby
+let g:rufo_auto_formatting = 1
+
 " JavaScript ES6 support
 autocmd BufRead,BufNewFile *.es6 setfiletype javascript
 
