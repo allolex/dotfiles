@@ -14,6 +14,7 @@ autojump
 automake
 aview
 awscli
+azure-cli
 bash
 bdw-gc
 bfg
@@ -108,6 +109,7 @@ isl
 jasper
 jemalloc
 jpeg
+jq
 json-c
 krb5
 lame
@@ -178,14 +180,15 @@ nettle
 ngrok
 ninja
 nmap
-node
 npth
 nspr
 nss
 numpy
+oniguruma
 openblas
 opencore-amr
 openexr
+openjdk
 openjpeg
 openssl
 openssl@1.1
@@ -274,6 +277,6 @@ xapian
 xerces-c
 xvid
 xz
-yarn
+youtube-dl
 zlib
 zstd
