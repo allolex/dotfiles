@@ -17,9 +17,9 @@ function join_by {
 }
 
 function __env_language {
-  EL_VER="elixir_$(elixir --version | tail -1 | perl -pe's/Elixir (\d+\.\d+\.\d+[\S]*).*$/$1/')"
-  PY_VER="python_$(python --version 2>&1 | perl -pe's/Python (\d+\.\d+\.\d+[\S]*).*$/$1/')"
-  RU_VER="ruby_$(ruby -v | sed 's/(.*$//' | perl -pe's/ruby (\d+\.\d+\.\d+[\S]*).*$/$1/')"
+  EL_VER="elixir_$(asdf exec elixir --version | tail -1 | perl -pe's/Elixir (\d+\.\d+\.\d+[\S]*).*$/$1/')"
+  PY_VER="python_$(asdf exec python --version 2>&1 | perl -pe's/Python (\d+\.\d+\.\d+[\S]*).*$/$1/')"
+  RU_VER="ruby_$(asdf exec ruby -v | sed 's/(.*$//' | perl -pe's/ruby (\d+\.\d+\.\d+[\S]*).*$/$1/')"
 
   echo $(join_by " | " $EL_VER $PY_VER $RU_VER)
 }
@@ -61,6 +61,8 @@ bash_prompt() {
   [ $UID -eq "0" ] && UC=$R   # root's color
 
   PS1="$EMC$(hostname | sed 's/\.local$//')$W : $EMB\$(__env_language)$W\n$EMY\w : $EMW\$(__git_branch) $EMY\$(__git_dirty)${NONE} $ "
+  # PS1="$EMC$(hostname | sed 's/\.local$//')$W : $EMY\w : $EMW\$(__git_branch) $EMY\$(__git_dirty)${NONE} \n$ "
+  # PS1="$EMC$(hostname | sed 's/\.local$//')$W $ "
 }
 
 bash_prompt

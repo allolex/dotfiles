@@ -26,4 +26,8 @@ export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/opt/bin:/usr/local/opt/sbi
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
-source $(brew --prefix asdf)/asdf.sh
+
+# asdf-direnv skips loading asdf everywhere
+# source $(brew --prefix asdf)/asdf.sh
+export ASDF_DIR=$(brew --prefix asdf)
+export PATH=${HOME}/.asdf/bin:${PATH}
