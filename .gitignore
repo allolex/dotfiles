@@ -1,19 +1,13 @@
 bashrc.d/*_private.bash
-config/direnv/allow/
-config/nvim/pack/bundle/opt 
-config/nvim/pack/bundle/start/
-config/nvim/pack/minpac/opt/
-config/nvim/pack/minpac/start/
+*.private
+/config/direnv/allow
+/config/nvim/pack/bundle/opt 
+/config/nvim/pack/bundle/start/
+/config/nvim/pack/minpac/opt/
+/config/nvim/pack/minpac/start/
 vim/.netrwhist
-<<<<<<< HEAD
-vim/black
-=======
-vim/pack/minpac/
-vim/plugged
->>>>>>> Use vim-plug and coc.nvim
 vim/spell/*.add
 vim/spell/*.spl
 vim/spell/*.sug
 vim/unite/history*
 vim/unite/rec/
-/config/direnv/allow
