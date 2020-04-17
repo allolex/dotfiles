@@ -5,6 +5,7 @@ bashrc.d/*_private.bash
 /config/nvim/pack/bundle/start/
 /config/nvim/pack/minpac/opt/
 /config/nvim/pack/minpac/start/
+/vim/plugged
 vim/.netrwhist
 vim/spell/*.add
 vim/spell/*.spl
