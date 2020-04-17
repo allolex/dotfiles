@@ -15,6 +15,7 @@
 .ruby-gemset
 .rvmrc
 .tags
+.tool-versions
 Icon?
 !Icon[a-z0-9-_]
 TODO.md
