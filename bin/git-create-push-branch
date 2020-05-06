@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
 git add . && git stash -m'Git checkout automatic stash'
 
-git checkout staging && git pull
+git pull
 
 if [-z $1]; then
   echo "Could not create and push an empty branch name to origin"
   exit 1
 fi
 
+# git checkout -b branchname && git push -u origin !$
 git checkout -b "${1}" && git push -u origin "${1}"

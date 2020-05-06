@@ -11,8 +11,8 @@ alias gaa='git add .'
 
 alias gb='git branch'
 
-alias gcob='git checkout'
 alias gcob='git checkout -b'
+alias gp-current-branch='git push -u origin $(git branch --show-current)'
 
 if [[ -z ${GPG_DEFAULT_KEY} ]]; then
   alias gc='git commit'
@@ -37,16 +37,14 @@ alias gh='git hist'
 alias gl='git log --oneline --decorate'
 
 alias gp='git pull'
-alias gpp='git pull --rebase && git push'
-alias gpr='git pull --rebase'
 
 alias gprq='git pull-request'
 
 alias gpush="git push -u origin \"\$(git rev-parse --abbrev-ref HEAD)\""
 
-alias grc='git rebase --continue'
-alias gri='git rebase --interactive'
-alias grs='git rebase --skip'
+alias grbc='git rebase --continue'
+alias grbi='git rebase --interactive'
+alias grbs='git rebase --skip'
 
 alias gsl='git stash list'
 alias gsp='git stash pop'
