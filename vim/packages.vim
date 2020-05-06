@@ -61,7 +61,11 @@ Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
 " Vue.js support
 Plug 'posva/vim-vue'
 
-""" DOCUMENTATION
+" RAML
+
+Plug 'IN3D/vim-raml', {'for': 'raml'}
+
+"" DOCUMENTATION
 
 " Dash
 Plug 'rizzatti/funcoo.vim'
@@ -133,12 +137,12 @@ Plug 'tpope/vim-abolish'
 
 " Asynch execution of stuff you run via new :Make command
 Plug 'tpope/vim-dispatch'
+" Support for projection files / semantic navigation in a project
+Plug 'tpope/vim-projectionist'
+
 
 " Work with git
 Plug 'tpope/vim-fugitive'
-
-" Support for projection files / semantic navigation in a project
-Plug 'tpope/vim-projectionist'
 
 " Work with GitHub, e.g. :gbrowse
 Plug 'tpope/vim-rhubarb'
