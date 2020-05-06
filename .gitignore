@@ -1,10 +1,12 @@
 bashrc.d/*_private.bash
 *.private
+/config/coc
 /config/direnv/allow
 /config/nvim/pack/bundle/opt 
 /config/nvim/pack/bundle/start/
 /config/nvim/pack/minpac/opt/
 /config/nvim/pack/minpac/start/
+/config/yarn
 /vim/plugged
 vim/.netrwhist
 vim/spell/*.add
