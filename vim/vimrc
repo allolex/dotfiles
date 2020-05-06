@@ -81,5 +81,6 @@ source $HOME/.vim/markdown.vim
 source $HOME/.vim/dash.vim
 source $HOME/.vim/python.vim
 source $HOME/.vim/go.vim
+source $HOME/.vim/work.vim
 
 packloadall

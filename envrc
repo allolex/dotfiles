@@ -1,2 +1,4 @@
 use asdf
+# Use this in templates not in $HOME to inherit variables from there
+# [[ -f $HOME/.envrc ]] && source_env $HOME/.envrc
 dotenv
