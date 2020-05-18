@@ -12,8 +12,11 @@ endif
 
 """ LANGUAGE
 
-" General-purpose formatters
+" General-purpose formatter
 Plug 'sbdchd/neoformat'
+
+" Project-specific editor config
+Plug 'editorconfig/editorconfig-vim'
 
 " Clojure
 Plug 'Olical/conjure', { 'tag': 'v2.1.2', 'do': 'bin/compile', 'for': 'clojure' }
@@ -37,6 +40,7 @@ Plug 'jtratner/vim-flavored-markdown', { 'for': 'markdown' }
 
 " Python
 Plug 'python-mode/python-mode', { 'for': 'python' }
+Plug 'psf/black', { 'branch': 'stable', 'for': 'python' }
 
 " Ruby
 Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }

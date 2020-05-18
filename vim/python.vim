@@ -1,5 +1,8 @@
 autocmd FileType python setlocal shiftwidth=4 tabstop=4 expandtab textwidth=88 nowrap formatoptions-=t
-autocmd FileType python autocmd BufWritePre <buffer> execute ':Black'
+"autocmd FileType python autocmd BufWritePre <buffer> execute ':Black'
+
+let g:pymode_breakpoint = 0
+let g:pymode_lint = 0
 
 let @p = "import pprint as pp; import pdb; pdb.set_trace()"
 
