@@ -1,13 +1,10 @@
 call plug#begin('~/.vim/plugged')
 
 if has('nvim')
-  Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' }
   Plug 'kassio/neoterm'
   Plug 'neoclide/coc.nvim', { 'branch': 'release'}
 else
-  Plug 'Shougo/denite.nvim'
-  Plug 'roxma/nvim-yarp'
-  Plug 'roxma/vim-hug-neovim-rpc'
+  " Nothing
 endif
 
 """ LANGUAGE
