@@ -113,6 +113,7 @@ Plug 'jeetsukumaran/vim-buffergator'
 
 " Fuzzy file finder
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 
 " Distraction-free writing mode (text focus mode)
 Plug 'junegunn/goyo.vim'
