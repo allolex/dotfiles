@@ -8,7 +8,7 @@ set nowritebackup
 set notimeout
 set ttimeout
 set ttimeoutlen=10
-set noswapfile                    " It's 2012, Vim."
+set noswapfile
 set history=50
 set ruler         " show the cursor position all the time
 set showcmd       " display incomplete commands
