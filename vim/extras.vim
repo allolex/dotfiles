@@ -68,9 +68,6 @@ set complete=.,b,u,]
 " NERDTree
 map <leader>l :NERDTreeToggle<cr>
 
-" Tagbar
-map <leader>k :TagbarToggle<cr>
-
 " Signify / Sy
 " Mapping for jumping to the next or previous hunk.
 let g:signify_mapping_next_hunk = '<leader>gj'
