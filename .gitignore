@@ -1,6 +1,7 @@
 bashrc.d/*_private.bash
 *.private
 /config/coc
+/config/configstore
 /config/direnv/allow
 /config/nvim/pack/bundle/opt 
 /config/nvim/pack/bundle/start/
