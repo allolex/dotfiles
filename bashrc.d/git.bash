@@ -51,6 +51,3 @@ alias gsp='git stash pop'
 alias gss='git stash save'
 
 alias gt='git tag'
-
-alias master='git checkout master && git pull'
-alias staging='git checkout staging && git pull'
