@@ -35,6 +35,9 @@ Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'tpope/vim-markdown', { 'for': 'markdown' }
 Plug 'jtratner/vim-flavored-markdown', { 'for': 'markdown' }
 
+" OpenAPI/Swagger
+Plug 'hsanson/vim-openapi' " detector needs to be loaded to detect OpenAPI YAML
+
 " Python
 Plug 'python-mode/python-mode', { 'for': 'python' }
 Plug 'psf/black', { 'branch': 'stable', 'for': 'python' }
