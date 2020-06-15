@@ -28,3 +28,6 @@ export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/opt/bin:/usr/local/opt/sbi
 
 source $(brew --prefix asdf)/asdf.sh
 
+echo ""
+fortune -e
+echo ""
