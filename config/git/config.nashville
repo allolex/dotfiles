@@ -1,7 +1,7 @@
 [user]
 [core]
   editor = vim
-  excludesfile = /Users/damon/.gitignore_global
+  excludesfile = ~/.config/git/ignore
 [alias]
   aliases = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\ \t => \\2/' | sort
   br = branch
@@ -31,7 +31,7 @@
 [ghi]
   token = 3e5f04f23cc34e7d712ce2d81199906384b279db
 [init]
-  templatedir = ~/.git_templates
+  templatedir = ~/.config/git/template
 [credential]
   helper = osxkeychain
 [filter "media"]
