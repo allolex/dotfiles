@@ -15,3 +15,4 @@ vim/spell/*.spl
 vim/spell/*.sug
 vim/unite/history*
 vim/unite/rec/
+/config/hub
