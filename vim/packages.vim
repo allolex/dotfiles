@@ -58,7 +58,10 @@ Plug 'racer-rust/vim-racer'
 " slim
 Plug 'slim-template/vim-slim', { 'for': 'slim' }
 
-" Typescript
+" Swift
+Plug 'keith/swift.vim'
+
+"Typescript
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
 
