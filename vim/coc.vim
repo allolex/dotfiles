@@ -131,3 +131,19 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
 """ This has to be last to ensure compatibility with vim-endwise
 source $HOME/.vim/vim-endwise-coc-nvim-compatibility.vim
+
+function! CocNvimHighlight()
+  highlight CocErrorHighlight ctermfg=Red  guifg=#ff0000
+  highlight CocWarningHighlight ctermfg=Red  guifg=#ff0000
+  highlight CocInfoHighlight ctermfg=Red  guifg=#ff0000
+  highlight CocHintHighlight ctermfg=Red  guifg=#ff0000
+  highlight CocErrorLine ctermfg=White  guifg=#eeeeee
+  highlight CocWarningLine ctermfg=Red  guifg=#ff0000
+  highlight CocInfoLine ctermfg=Red  guifg=#ff0000
+  highlight CocHintLine ctermfg=Red  guifg=#ff0000
+
+  highlight CocHighlightText  guibg=#111111 ctermbg=223
+endfunction
+
+autocmd VimEnter function CocNvimHighlight()
+
