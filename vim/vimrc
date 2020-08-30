@@ -70,18 +70,22 @@ source $HOME/.vim/coc.vim
 source $HOME/.vim/autocommands.vim
 source $HOME/.vim/plugins.vim
 source $HOME/.vim/shortcuts.vim
-source $HOME/.vim/rails.vim
+
 source $HOME/.vim/snippets.vim
 source $HOME/.vim/syntax.vim
 source $HOME/.vim/testing.vim
 source $HOME/.vim/tmux.vim
 source $HOME/.vim/visual_fixes.vim
 source $HOME/.vim/extras.vim
-source $HOME/.vim/markdown.vim
 source $HOME/.vim/dash.vim
-source $HOME/.vim/python.vim
+
 source $HOME/.vim/go.vim
-source $HOME/.vim/work.vim
+source $HOME/.vim/markdown.vim
+source $HOME/.vim/python.vim
+source $HOME/.vim/rails.vim
 source $HOME/.vim/ruby.vim
+source $HOME/.vim/swift.vim
+
+source $HOME/.vim/work.vim
 
 packloadall
