@@ -5,19 +5,28 @@
 [alias]
   aliases = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\ \t => \\2/' | sort
   br = branch
-  co = checkout
   cm = commit -S
+  co = checkout
+  commit-wip = commit -m'WIP: auto'
   df = diff
   graph = log --color --graph --pretty=format:\"%h | %ad | %an | %s%d\" --date=short
   hist = log --color --pretty=format:\"%C(yellow)%h%C(reset) %s%C(bold red)%d%C(reset) %C(green)%ad%C(reset) %C(blue)[%an]%C(reset)\" --relative-date --decorate
+  init-empty-repo = !git init && git add -A && git commit -m'Commit initial directory state'
+  l = log-author
   lg = log -p
-  shove = push --force
+  log-author = log --pretty=format:\"%C(yellow)%h %<(10)%Cblue%ad %<(16,trunc)%C(magenta)%an %C(white)%<(66,trunc)%s\" --date=short
+  log-merges = l --grep="^Merge"
+  log-no-merges = log-merges --invert-grep
   rb = rebase
-  rbi = rebase -i
+  rb-c = rebase --continue
+  rb-i = rebase -i
+  rb-s = rebase --skip
+  # https://stackoverflow.com/questions/52823692/git-push-force-with-lease-vs-force
+  shove = push --force-with-lease
   st = status
-  this = !git init && git add -A && git commit -m'Commit initial directory state'
+  this = init-empty-repo
   viz = ! $GIT_VISUALISATION_APP .
-  nomerge = log --grep="Merge" --invert-grep --oneline --decorate
+  wip = commit-wip
 [color]
   ui = auto
 [merge]

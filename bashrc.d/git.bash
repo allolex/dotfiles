@@ -34,7 +34,7 @@ alias gfa='git fetch --all'
 
 alias gh='git hist'
 
-alias gl='git log --oneline --decorate'
+alias gl='git log-author'
 
 alias gp='git pull'
 
